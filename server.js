@@ -1,7 +1,7 @@
 import http from "node:http";
 import pg from "pg";
 
-const MARK = "node-v1";
+const MARK = "node-v2";
 const pool = new pg.Pool({
   host: process.env.DB_HOST, port: Number(process.env.DB_PORT),
   database: process.env.DB_DATABASE, user: process.env.DB_USERNAME, password: process.env.DB_PASSWORD,
